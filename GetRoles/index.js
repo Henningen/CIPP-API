@@ -16,6 +16,7 @@ module.exports = async function (context, req) {
             roles.push(role);
         }
     }
+    roles.push('readonly');
 
     context.res.json({
         roles
